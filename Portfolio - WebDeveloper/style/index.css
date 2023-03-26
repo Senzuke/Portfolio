@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'FragmentMono';
+    src: url(/fonts/FragmentMono-Italic.ttf);
+}
+
+@font-face {
+    font-family: 'frag';
+    src: url(/fonts/FragmentMono-Regular.ttf);
+}
+
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+
+body {
+    font-family:"Aboreto";
+    background: rgb(0,40,255);
+background: linear-gradient(1deg, rgba(0,40,255,1) 0%, rgba(33,3,144,1) 50%, rgba(0,40,255,1) 100%);
+}
+
+h1 { 
+    color: #07518b;
+    font-weight: bold;
+    letter-spacing: 4px;
+    background-color: black;
+    border: 3px solid black;
+    border-radius: 50px;
+    display: inline-block;
+    padding: 3px;
+    margin: -20px -10px;
+    list-style-type: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#avatar {
+    border-radius: 50%;
+    width: 200px;
+    display: block;
+    filter: grayscale(100%);
+}
+
+p {
+    text-shadow:  0 0 4px rgba(255, 255, 255, .3), 0 0 3px rgba(255, 255, 255, .3);
+    text-align: center;
+    font-size: xx-large;
+    font-family: monospace;
+}
+
+.container {
+    color: #e5e5e5;
+    font-size: 1.53rem;
+    text-transform: uppercase;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    margin: 30px;
+    padding: 20px ;
+    text-align: left;
+}
+
+.avatar {
+    height: 128px;
+    width:128px;
+    border: 50px;
+    border-radius: 50px;
+}
+
+#headingTitle {
+    font-size: x-small;
+    border: none;
+    background: none;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-variant:normal;
+    margin: 17px;
+}
+
+H5 {
+    text-align: right;
+}
+
+h6 {
+    margin: 12px;
+    text-align: center;
+    margin-left: 12px;
+}
+.name {
+    text-align: right;
+}
+.animation {
+    height: 50px;
+    overflow: hidden;
+    margin-left: 1;
+    top: 40px;
+    left: 10px;
+    animation: slideUp ease .5s forwards 1.2s;
+}
+
+.animation > div > div {
+    padding: 0.25rem 0.75rem;
+    height: 2.81rem;
+    margin-bottom: 3.00rem;
+    display: inline-block;
+}
+
+.animation div:first-child {
+    animation: text-animation 9s infinite;
+}
+
+.header {
+    background-color: black;
+    padding: 30px;
+}
+
+.navbar {
+    background-color: black;
+    padding: 23px 16px;
+}
+
+.navbar a {
+    display: inline-block;
+    font-family: 'Courgette';font-size: 22px;    ;
+}
+
+.first div {
+    background-color:red;
+    margin-bottom: 1px;
+}
+
+.second div
+ {
+    background-color: purple;
+    text-align: left;
+ }
+.third div {
+    background-color: lightseagreen;
+}
+
+@keyframes text-animation {
+    0% {margin-top: 0;}
+    10% {margin-top: 0;}
+    20% {margin-top: -5.62rem;}
+    30% {margin-top: -5.62rem;}
+    40% {margin-top: -11.24rem;}
+    60% {margin-top: -11.24rem;}
+    70% {margin-top: -5.62rem;}
+    80% {margin-top: -5.62rem;}
+    90% {margin-top: 0;}
+    100% {margin-top: 0;}
+}
+
+@keyframes menu-animation {
+    0% {margin-bottom: 0;}
+    10% {margin-top: -3.45rem;}
+    20% {margin-bottom: -3.45rem;}
+    100% {margin-top: -5.34rem;}
+}
+span {
+    color: white;
+
+}
+
+.menu {
+    float: left;
+    letter-spacing: 3px;
+    border-radius: 50px;
+    font-size: xx-small;
+    list-style-type: none;
+}
+
+.menu a {
+    color: var(--glow-color);
+    border: 1px solid var(--glow-color);
+    list-style-type: none;
+    border-radius: 50px;
+    font-family: sans-serif;
+    letter-spacing: 5px;
+    padding: 17px 10px;
+    -webkit-box-shadow: inset 0px 0px 0.5em 0px
+    var(--glow-color), 0px 0px 0.5em 0px var(--glow-color);
+    -moz-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color);
+    box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+    0px 0px 0.5em 0px var(--glow-color);
+    animation: border-flicker 2s linear infinite;
+}
+
+
+
+.neonCONTACT, .neonMYWORK, .neonINFO, .neonSOCIALS {
+    color: #fff;
+    text-shadow: 
+    0 0 7px rgba(0, 13, 255, 0.884),
+    0 0 10px rgba(15, 19, 87, 0.884),
+    0 0 21px rgba(0, 13, 255, 0.884),
+    0 0 42px rgba(15, 19, 87, 0.884),
+    0 0 82px rgba(0, 13, 255, 0.884),
+    0 0 92px rgba(15, 19, 87, 0.884),
+    0 0 102px rgba(0, 13, 255, 0.884),
+    0 0 151px rgba(15, 19, 87, 0.884);
+}
+
+.neonCONTACT:hover, .neonMYWORK:hover, .neonINFO:hover, .neonSOCIALS:hover {
+    opacity: 0.5;
+}
+
+.glowing-btn:hover::after {
+    opacity: 1;
+}
+
+@keyframes faulty-flicker {
+    0% {
+        opacity: 0.1;
+    }
+    2% {
+        opacity: 0.1;
+    }
+    4% {
+        opacity: 0.5;
+    }
+
+    19% {
+        opacity: 0.5;
+    }
+    21% {
+        opacity: 0.1;
+    }
+
+    23% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0.5;
+    }
+
+    83% {
+        opacity: 0.4;
+    }
+
+    87% {
+        opacity: 1;
+    }
+}
+
+@keyframes text-flicker {
+    0% {
+        opacity: 0.1;
+    }
+    2% {
+        opacity: 1;
+    }
+
+    8% {
+        opacity: 0.1;
+    }
+
+    9% {
+        opacity: 1;
+    }
+
+    12% {
+        opacity: 0.1;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0.3;
+    }
+    30% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 0.7;
+    }
+
+    72% {
+        opacity: 0.2;
+    }
+
+    77% {
+        opacity: 0.9;
+    }
+
+    100% {
+        opacity: 0.9;
+    }
+}
+
+@keyframes border-flicker {
+    0% {
+        opacity: 0.1;
+    }
+
+    2% {
+        opacity: 1;
+    }
+    4% {
+        opacity: 0.1;
+    }
+    8% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width:  600px) {
+    .glowing-btn {
+        font-size: 1em;
+    }
+}
